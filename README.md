@@ -1,6 +1,6 @@
 # andreroddev.github.io
 
-Site público dos jogos (GitHub Pages). Publica-se sozinho a cada envio para `main`.
+Site público da ByMi Games (GitHub Pages). Publica-se sozinho a cada envio para `main`.
 
 ## Estrutura
 - `index.html` — página principal com a lista de jogos.

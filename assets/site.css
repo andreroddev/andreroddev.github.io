@@ -56,6 +56,7 @@ html[data-lang="pt"] [lang="en"]:not(html), html[data-lang="en"] [lang="pt"]:not
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-size: 21px; }
 .brand:hover { text-decoration: none; }
 .brand img { width: 36px; height: 36px; border-radius: 10px; box-shadow: 0 3px 0 var(--edge); }
+.brand .mark { width: 36px; height: 36px; border-radius: 11px; display: grid; place-items: center; font-size: 22px; color: #3a2600; background: linear-gradient(180deg, var(--gold), var(--gold-dk)); box-shadow: 0 3px 0 var(--edge), inset 0 2px 0 rgba(255, 255, 255, .35); }
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav a { color: var(--muted); padding: 6px 10px; border-radius: 10px; font-weight: 700; font-size: 15px; }
 .nav a:hover { color: var(--text); text-decoration: none; background: rgba(255, 255, 255, .06); }
