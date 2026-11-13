@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>andreroddev · Jogos</title>
 <meta name="description" content="Jogos independentes para Android, feitos com cuidado e sem pay-to-win. Independent Android games, made with care and never pay-to-win.">
+<meta name="theme-color" content="#0b1230">
 <meta property="og:title" content="andreroddev · Jogos">
 <meta property="og:description" content="Jogos independentes para Android. Independent Android games.">
-<meta property="og:image" content="https://andreroddev.github.io/spireborn/img/feature.jpg">
+<meta property="og:image" content="https://andreroddev.github.io/spireborn/img/icon.png">
 <link rel="icon" href="spireborn/img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/lang.js"></script>
 </head>
@@ -17,10 +21,10 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="./"><span class="mark">A</span>andreroddev</a>
+    <a class="brand" href="./"><img src="spireborn/img/icon-64.png" alt="" width="36" height="36">andreroddev</a>
     <nav class="nav">
       <a href="#jogos"><span lang="pt">Jogos</span><span lang="en">Games</span></a>
-      <a href="#contacto"><span lang="pt">Contacto</span><span lang="en">Contact</span></a>
+      <a class="hide-sm" href="#contacto"><span lang="pt">Contacto</span><span lang="en">Contact</span></a>
       <button class="langbtn" id="langbtn" type="button">English</button>
     </nav>
   </div>
@@ -29,10 +33,20 @@
 <main>
   <section class="hero">
     <div class="wrap">
-      <h1 lang="pt">Jogos independentes para Android.</h1>
-      <h1 lang="en">Independent games for Android.</h1>
-      <p lang="pt">Feitos com cuidado, pensados para partidas curtas e para durar. Sem anúncios a interromper e sem pay-to-win: o que se compra só muda o aspeto.</p>
-      <p lang="en">Made with care, built for short sessions that last. No ads in your way and never pay-to-win: anything you buy only changes how things look.</p>
+      <h1 class="logo" lang="pt">Jogos feitos à mão</h1>
+      <h1 class="logo" lang="en">Handmade games</h1>
+      <p lang="pt">Jogos independentes para Android, pensados para partidas curtas e para durar. Justos: nada do que se compra dá vantagem.</p>
+      <p lang="en">Independent Android games, built for short sessions that last. Fair: nothing you can buy gives you an edge.</p>
+      <div class="btns" style="justify-content:center">
+        <a class="btn green" href="#jogos"><span lang="pt">Ver os jogos</span><span lang="en">See the games</span></a>
+      </div>
+    </div>
+    <div class="mountains" aria-hidden="true">
+      <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+        <path d="M0 140 L0 90 L140 40 L260 95 L380 20 L520 100 L640 55 L760 110 L900 30 L1040 95 L1160 50 L1300 105 L1440 60 L1440 140 Z" fill="#1d2a6e"/>
+        <path d="M380 20 L410 38 L395 36 L380 46 L366 34 L352 38 Z M900 30 L930 50 L914 47 L900 58 L886 46 L870 50 Z" fill="#eaf2ff" opacity=".85"/>
+        <path d="M0 140 L0 118 L200 92 L420 124 L700 96 L980 126 L1220 100 L1440 120 L1440 140 Z" fill="#243380"/>
+      </svg>
     </div>
   </section>
 
@@ -42,23 +56,31 @@
       <div class="games">
         <!-- Um cartão por jogo. Para juntar um jogo: copiar este bloco <a class="game">, mudar o link, as imagens e os textos. -->
         <a class="game" href="spireborn/">
-          <img class="cover" src="spireborn/img/feature.jpg" alt="Spireborn" loading="lazy" width="1024" height="500">
+          <div class="art" aria-hidden="true">
+            <img class="phone p1" lang="pt" src="spireborn/img/pt_2_cartas.jpg" alt="" loading="lazy">
+            <img class="phone p2" lang="pt" src="spireborn/img/pt_1_torre.jpg" alt="" loading="lazy">
+            <img class="phone p3" lang="pt" src="spireborn/img/pt_4_360.jpg" alt="" loading="lazy">
+            <img class="phone p1" lang="en" src="spireborn/img/en_2_cartas.jpg" alt="" loading="lazy">
+            <img class="phone p2" lang="en" src="spireborn/img/en_1_torre.jpg" alt="" loading="lazy">
+            <img class="phone p3" lang="en" src="spireborn/img/en_4_360.jpg" alt="" loading="lazy">
+          </div>
           <div class="body">
-            <img class="icon" src="spireborn/img/icon.png" alt="" width="56" height="56">
+            <img class="icon" src="spireborn/img/icon.png" alt="" width="64" height="64">
             <div>
               <h3>Spireborn</h3>
               <p lang="pt">Constrói a torre andar a andar, funde estrelas e esmaga bosses com a Martelada.</p>
               <p lang="en">Build your tower floor by floor, merge stars and smash bosses with the Hammer.</p>
-              <div class="tags">
-                <span class="tag">Android</span>
-                <span class="tag"><span lang="pt">Tower defense</span><span lang="en">Tower defense</span></span>
-                <span class="tag live"><span lang="pt">Em teste</span><span lang="en">In testing</span></span>
-              </div>
             </div>
+          </div>
+          <div class="tags">
+            <span class="tag">Android</span>
+            <span class="tag">Tower defense</span>
+            <span class="tag live"><span lang="pt">Em teste</span><span lang="en">In testing</span></span>
           </div>
         </a>
         <div class="game soon">
-          <p><span lang="pt">Próximo jogo em breve.</span><span lang="en">Next game coming soon.</span></p>
+          <div><b><span lang="pt">Em breve</span><span lang="en">Coming soon</span></b>
+          <span lang="pt">O próximo jogo está na forja.</span><span lang="en">The next game is in the forge.</span></div>
         </div>
       </div>
     </div>
@@ -67,7 +89,7 @@
   <section class="section" id="contacto">
     <div class="wrap">
       <h2><span lang="pt">Contacto</span><span lang="en">Contact</span></h2>
-      <p class="muted"><span lang="pt">Dúvidas, problemas com um jogo ou pedidos de imprensa:</span><span lang="en">Questions, problems with a game or press requests:</span>
+      <p class="muted"><span lang="pt">Dúvidas, problemas com um jogo ou imprensa:</span><span lang="en">Questions, problems with a game or press:</span>
         <a href="mailto:andreroddev@gmail.com">andreroddev@gmail.com</a></p>
     </div>
   </section>

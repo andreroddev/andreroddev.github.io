@@ -3,104 +3,129 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Spireborn · andreroddev</title>
+<title>Spireborn · Torre e Martelo</title>
 <meta name="description" content="Spireborn: constrói a torre andar a andar, funde estrelas e esmaga bosses com a Martelada. Build your tower floor by floor, merge stars and smash bosses with the Hammer.">
+<meta name="theme-color" content="#0b1230">
 <meta property="og:title" content="Spireborn">
 <meta property="og:description" content="Build your tower floor by floor, merge stars and smash bosses with the Hammer.">
-<meta property="og:image" content="https://andreroddev.github.io/spireborn/img/feature.jpg">
+<meta property="og:image" content="https://andreroddev.github.io/spireborn/img/icon.png">
 <link rel="icon" href="img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 <script src="../assets/lang.js"></script>
 </head>
 <body>
-<span hidden data-title-pt="Spireborn · Torre e Martelo" data-title-en="Spireborn · Tower & Hammer"></span>
+<span hidden data-title-pt="Spireborn · Torre e Martelo" data-title-en="Spireborn · Tower &amp; Hammer"></span>
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="../"><span class="mark">A</span>andreroddev</a>
+    <a class="brand" href="../"><img src="img/icon-64.png" alt="" width="36" height="36">andreroddev</a>
     <nav class="nav">
-      <a href="../#jogos"><span lang="pt">Jogos</span><span lang="en">Games</span></a>
+      <a class="hide-sm" href="../#jogos"><span lang="pt">Jogos</span><span lang="en">Games</span></a>
       <a href="privacy.html"><span lang="pt">Privacidade</span><span lang="en">Privacy</span></a>
       <button class="langbtn" id="langbtn" type="button">English</button>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <section class="gamehead">
-    <div class="feature"><img src="img/feature.jpg" alt="Spireborn" width="1024" height="500"></div>
-    <div>
-      <div class="gametitle">
-        <img src="img/icon.png" alt="" width="72" height="72">
-        <div>
-          <h1>Spireborn</h1>
-          <p lang="pt">Torre e Martelo · tower defense roguelite</p>
-          <p lang="en">Tower &amp; Hammer · tower defense roguelite</p>
+<main>
+  <section class="ghero">
+    <div class="wrap">
+      <div>
+        <img class="icon" src="img/icon.png" alt="" width="84" height="84">
+        <h1 class="logo">Spireborn</h1>
+        <p class="sub" lang="pt">Torre e Martelo</p>
+        <p class="sub" lang="en">Tower &amp; Hammer</p>
+        <p class="lead" lang="pt">Os espíritos do inverno marcham sobre a tua torre. Constrói-a andar a andar, funde estrelas e sobe a montanha o mais alto que conseguires.</p>
+        <p class="lead" lang="en">The spirits of winter march on your tower. Build it floor by floor, merge stars and climb the mountain as high as you can.</p>
+        <div class="btns">
+          <span class="btn gold soon"><span lang="pt">Google Play</span><span lang="en">Google Play</span> <small lang="pt">em breve</small><small lang="en">soon</small></span>
+          <a class="btn" href="mailto:andreroddev@gmail.com?subject=Spireborn"><span lang="pt">Quero testar</span><span lang="en">Let me test it</span></a>
         </div>
       </div>
-      <p lang="pt">Os espíritos do inverno marcham sobre a tua torre. Constrói-a andar a andar e sobe a montanha o mais alto que conseguires.</p>
-      <p lang="en">The spirits of winter march on your tower. Build it floor by floor and climb the mountain as high as you can.</p>
-      <div class="btns">
-        <span class="btn primary disabled"><span lang="pt">Google Play · em breve</span><span lang="en">Google Play · coming soon</span></span>
-        <a class="btn" href="mailto:andreroddev@gmail.com?subject=Spireborn"><span lang="pt">Quero testar</span><span lang="en">I want to test it</span></a>
+      <div class="phones" aria-hidden="true">
+        <img class="a" lang="pt" src="img/pt_4_360.jpg" alt="">
+        <img class="b" lang="pt" src="img/pt_1_torre.jpg" alt="">
+        <img class="a" lang="en" src="img/en_4_360.jpg" alt="">
+        <img class="b" lang="en" src="img/en_1_torre.jpg" alt="">
+      </div>
+    </div>
+    <div class="mountains" aria-hidden="true">
+      <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+        <path d="M0 140 L0 90 L140 40 L260 95 L380 20 L520 100 L640 55 L760 110 L900 30 L1040 95 L1160 50 L1300 105 L1440 60 L1440 140 Z" fill="#1d2a6e"/>
+        <path d="M380 20 L410 38 L395 36 L380 46 L366 34 L352 38 Z M900 30 L930 50 L914 47 L900 58 L886 46 L870 50 Z" fill="#eaf2ff" opacity=".85"/>
+        <path d="M0 140 L0 118 L200 92 L420 124 L700 96 L980 126 L1220 100 L1440 120 L1440 140 Z" fill="#243380"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2><span lang="pt">O jogo</span><span lang="en">The game</span></h2>
+      <ul class="features">
+        <li><span class="ico c-gold"><svg viewBox="0 0 24 24" fill="none" stroke="#3a2600" stroke-width="2.4" stroke-linejoin="round"><path d="M7 21V9l5-5 5 5v12z"/><path d="M10 21v-4h4v4M10 12h4"/></svg></span>
+          <b><span lang="pt">Empilha e funde</span><span lang="en">Stack and merge</span></b>
+          <span lang="pt">Caçadores, Magos, Forjas, Moinhos, Arpoeiros e Faróis. Dois andares iguais fundem-se numa estrela.</span>
+          <span lang="en">Hunters, Mages, Forges, Mills, Harpooners and Lighthouses. Two matching floors merge into a star.</span></li>
+        <li><span class="ico c-blue"><svg viewBox="0 0 24 24" fill="none" stroke="#06223f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6-3 3-6-6z"/><path d="M11 7L4 20"/></svg></span>
+          <b><span lang="pt">A Martelada</span><span lang="en">The Hammer</span></b>
+          <span lang="pt">Carrega o golpe especial e acerta no momento certo para travar o boss.</span>
+          <span lang="en">Charge the special strike and land it at the right moment to stop the boss.</span></li>
+        <li><span class="ico c-purple"><svg viewBox="0 0 24 24" fill="none" stroke="#24104a" stroke-width="2.4" stroke-linejoin="round"><rect x="4" y="5" width="10" height="14" rx="2"/><path d="M10 5l2-2h6a2 2 0 012 2v12a2 2 0 01-2 2h-4"/></svg></span>
+          <b><span lang="pt">Cada run é diferente</span><span lang="en">Every run is different</span></b>
+          <span lang="pt">Cartas a cada 3 ondas, armas supremas, encontros na estrada e cartas que evoluem.</span>
+          <span lang="en">Cards every 3 waves, ultimate weapons, road encounters and cards that evolve.</span></li>
+        <li><span class="ico c-red"><svg viewBox="0 0 24 24" fill="none" stroke="#4a1208" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg></span>
+          <b>360°</b>
+          <span lang="pt">A partir da onda 20 os inimigos vêm de todos os lados. Vira as Balistas e ergue a muralha.</span>
+          <span lang="en">From wave 20 enemies come from every side. Turn the Ballistas and raise the wall.</span></li>
+        <li><span class="ico c-teal"><svg viewBox="0 0 24 24" fill="none" stroke="#06332c" stroke-width="2.4" stroke-linejoin="round"><path d="M2 20l7-12 4 6 3-4 6 10z"/></svg></span>
+          <b><span lang="pt">5 mundos e a Escada</span><span lang="en">5 worlds and the Ladder</span></b>
+          <span lang="pt">Cada mundo tem a sua regra e o seu Guardião. Depois do cume, 10 degraus de desafio.</span>
+          <span lang="en">Each world has its own rule and Guardian. After the summit, 10 rungs of challenge.</span></li>
+        <li><span class="ico c-green"><svg viewBox="0 0 24 24" fill="none" stroke="#123a06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+          <b><span lang="pt">Justo</span><span lang="en">Fair</span></b>
+          <span lang="pt">Sem pay-to-win: as compras só mudam o aspeto. Joga-se offline, em 6 línguas.</span>
+          <span lang="en">Never pay-to-win: purchases only change the look. Plays offline, in 6 languages.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2><span lang="pt">Imagens</span><span lang="en">Screenshots</span></h2>
+      <div class="shots" lang="pt">
+        <img src="img/pt_1_torre.jpg" alt="Constrói a torre andar a andar" loading="lazy" width="540" height="960">
+        <img src="img/pt_2_cartas.jpg" alt="Cartas que evoluem" loading="lazy" width="540" height="960">
+        <img src="img/pt_3_boss.jpg" alt="A Martelada perfeita" loading="lazy" width="540" height="960">
+        <img src="img/pt_4_360.jpg" alt="Batalha a 360°" loading="lazy" width="540" height="960">
+        <img src="img/pt_5_menu.jpg" alt="A montanha" loading="lazy" width="540" height="960">
+        <img src="img/pt_6_diario.jpg" alt="O Diário" loading="lazy" width="540" height="960">
+        <img src="img/pt_7_modos.jpg" alt="Modos" loading="lazy" width="540" height="960">
+      </div>
+      <div class="shots" lang="en">
+        <img src="img/en_1_torre.jpg" alt="Build the tower floor by floor" loading="lazy" width="540" height="960">
+        <img src="img/en_2_cartas.jpg" alt="Cards that evolve" loading="lazy" width="540" height="960">
+        <img src="img/en_3_boss.jpg" alt="The perfect Hammer strike" loading="lazy" width="540" height="960">
+        <img src="img/en_4_360.jpg" alt="360° battle" loading="lazy" width="540" height="960">
+        <img src="img/en_5_menu.jpg" alt="The mountain" loading="lazy" width="540" height="960">
+        <img src="img/en_6_diario.jpg" alt="The Journal" loading="lazy" width="540" height="960">
+        <img src="img/en_7_modos.jpg" alt="Modes" loading="lazy" width="540" height="960">
       </div>
     </div>
   </section>
 
   <section class="section">
-    <h2><span lang="pt">Imagens</span><span lang="en">Screenshots</span></h2>
-    <div class="shots" lang="pt">
-      <img src="img/pt_1_torre.jpg" alt="Constrói a torre andar a andar" loading="lazy" width="540" height="960">
-      <img src="img/pt_2_cartas.jpg" alt="Cartas a cada 3 ondas" loading="lazy" width="540" height="960">
-      <img src="img/pt_3_boss.jpg" alt="Bosses e a Martelada" loading="lazy" width="540" height="960">
-      <img src="img/pt_4_360.jpg" alt="Batalha a 360°" loading="lazy" width="540" height="960">
-      <img src="img/pt_5_menu.jpg" alt="A montanha" loading="lazy" width="540" height="960">
-      <img src="img/pt_6_diario.jpg" alt="O Diário" loading="lazy" width="540" height="960">
-      <img src="img/pt_7_modos.jpg" alt="Modos" loading="lazy" width="540" height="960">
+    <div class="wrap">
+      <ul class="facts">
+        <li><small><span lang="pt">Plataforma</span><span lang="en">Platform</span></small><b>Android</b></li>
+        <li><small><span lang="pt">Estado</span><span lang="en">Status</span></small><b><span lang="pt">Em teste fechado</span><span lang="en">Closed testing</span></b></li>
+        <li><small><span lang="pt">Preço</span><span lang="en">Price</span></small><b><span lang="pt">Grátis</span><span lang="en">Free</span></b></li>
+        <li><small><span lang="pt">Línguas</span><span lang="en">Languages</span></small><b>PT · EN · ES · BR · FR · DE</b></li>
+      </ul>
     </div>
-    <div class="shots" lang="en">
-      <img src="img/en_1_torre.jpg" alt="Build the tower floor by floor" loading="lazy" width="540" height="960">
-      <img src="img/en_2_cartas.jpg" alt="Cards every 3 waves" loading="lazy" width="540" height="960">
-      <img src="img/en_3_boss.jpg" alt="Bosses and the Hammer" loading="lazy" width="540" height="960">
-      <img src="img/en_4_360.jpg" alt="360° battle" loading="lazy" width="540" height="960">
-      <img src="img/en_5_menu.jpg" alt="The mountain" loading="lazy" width="540" height="960">
-      <img src="img/en_6_diario.jpg" alt="The Journal" loading="lazy" width="540" height="960">
-      <img src="img/en_7_modos.jpg" alt="Modes" loading="lazy" width="540" height="960">
-    </div>
-  </section>
-
-  <section class="section">
-    <h2><span lang="pt">O jogo</span><span lang="en">The game</span></h2>
-    <ul class="features">
-      <li><b><span lang="pt">Empilha e funde</span><span lang="en">Stack and merge</span></b>
-        <span lang="pt">Caçadores, Magos, Forjas, Moinhos, Arpoeiros e Faróis. Dois andares iguais fundem-se numa estrela.</span>
-        <span lang="en">Hunters, Mages, Forges, Mills, Harpooners and Lighthouses. Two matching floors merge into a star.</span></li>
-      <li><b><span lang="pt">A Martelada</span><span lang="en">The Hammer</span></b>
-        <span lang="pt">Carrega o golpe especial e acerta no momento certo para interromper o boss.</span>
-        <span lang="en">Charge the special strike and land it at the right moment to interrupt the boss.</span></li>
-      <li><b><span lang="pt">Cada run é diferente</span><span lang="en">Every run is different</span></b>
-        <span lang="pt">Cartas a cada 3 ondas, armas supremas, encontros na estrada e cartas que evoluem.</span>
-        <span lang="en">Cards every 3 waves, ultimate weapons, road encounters and cards that evolve.</span></li>
-      <li><b>360°</b>
-        <span lang="pt">A partir da onda 20 os inimigos vêm de todos os lados. Vira as Balistas e ergue a muralha.</span>
-        <span lang="en">From wave 20 enemies come from every side. Turn the Ballistas and raise the wall.</span></li>
-      <li><b><span lang="pt">5 mundos e a Escada</span><span lang="en">5 worlds and the Ladder</span></b>
-        <span lang="pt">Cada mundo com a sua regra e o seu Guardião. Depois do cume, 10 degraus de desafio.</span>
-        <span lang="en">Each world has its own rule and Guardian. After the summit, 10 rungs of challenge.</span></li>
-      <li><b><span lang="pt">Justo</span><span lang="en">Fair</span></b>
-        <span lang="pt">Sem pay-to-win. Funciona offline. Em 6 línguas.</span>
-        <span lang="en">Never pay-to-win. Plays offline. In 6 languages.</span></li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2><span lang="pt">Ficha</span><span lang="en">Details</span></h2>
-    <dl class="facts">
-      <div><dt><span lang="pt">Plataforma</span><span lang="en">Platform</span></dt><dd>Android</dd></div>
-      <div><dt><span lang="pt">Estado</span><span lang="en">Status</span></dt><dd><span lang="pt">Em teste fechado</span><span lang="en">Closed testing</span></dd></div>
-      <div><dt><span lang="pt">Preço</span><span lang="en">Price</span></dt><dd><span lang="pt">Grátis</span><span lang="en">Free</span></dd></div>
-      <div><dt><span lang="pt">Línguas</span><span lang="en">Languages</span></dt><dd>PT · EN · ES · BR · FR · DE</dd></div>
-    </dl>
   </section>
 </main>
 
