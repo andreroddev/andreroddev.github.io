@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Spireborn — Voltar ao jogo</title>
+<link rel="icon" href="img/icon-64.png">
+<style>
+  :root { --bg: #0b1230; --card: #1e2748; --line: #8ea4e0; --text: #eaf2ff; --muted: #b8c4e4; --go: #45b850; --go2: #18521f; --gold: #ffd23f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px;
+         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text);
+         background: radial-gradient(ellipse at 50% 20%, #2a3a8a 0%, var(--bg) 65%); }
+  .card { width: 100%; max-width: 420px; text-align: center; background: var(--card); border: 2px solid var(--line);
+          border-radius: 18px; padding: 28px 22px; box-shadow: 0 18px 50px rgba(0,0,0,.45); }
+  img { width: 88px; height: 88px; border-radius: 20px; }
+  h1 { font-size: 1.35rem; margin: 14px 0 6px; color: var(--gold); }
+  p { margin: 8px 0; line-height: 1.45; color: var(--muted); }
+  a.go { display: block; margin: 20px 0 6px; padding: 16px; border-radius: 14px; text-decoration: none; font-weight: 700; font-size: 1.15rem;
+         color: #fff; background: linear-gradient(var(--go), var(--go2)); border: 2px solid var(--gold); }
+  .err { color: #ffb3a8; }
+  .small { font-size: .85rem; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main class="card">
+  <img src="img/icon-512.png" alt="Spireborn">
+  <div id="ok">
+    <h1 data-pt="Sessão iniciada" data-en="Signed in">Sessão iniciada</h1>
+    <p data-pt="Toca no botão para voltar ao Spireborn e acabar de entrar." data-en="Tap the button to go back to Spireborn and finish signing in.">Toca no botão para voltar ao Spireborn e acabar de entrar.</p>
+    <a class="go" id="go" href="#" data-pt="Voltar ao jogo" data-en="Back to the game">Voltar ao jogo</a>
+    <p class="small" data-pt="Se o jogo não abrir, abre o Spireborn e toca outra vez em «Entrar com Google»." data-en="If the game does not open, open Spireborn and tap “Sign in with Google” again.">Se o jogo não abrir, abre o Spireborn e toca outra vez em «Entrar com Google».</p>
+  </div>
+  <div id="bad" hidden>
+    <h1 data-pt="Não foi possível entrar" data-en="Could not sign in">Não foi possível entrar</h1>
+    <p class="err" id="why"></p>
+    <a class="go" id="back" href="#" data-pt="Voltar ao jogo" data-en="Back to the game">Voltar ao jogo</a>
+  </div>
+</main>
+<script>
+  // O Supabase devolve o jogador aqui com ?code=… (ou ?error=…). Os navegadores do Android costumam bloquear o salto
+  // automático para uma app vinda de outro site; um botão tocado pelo jogador passa. O código só serve com o verificador
+  // que ficou no telemóvel, por isso não vale nada fora do jogo.
+  (function () {
+    var en = !/^pt/i.test(navigator.language || "");
+    document.querySelectorAll("[data-pt]").forEach(function (e) { e.textContent = e.getAttribute(en ? "data-en" : "data-pt"); });
+    if (en) document.documentElement.lang = "en";
+    var q = (location.search || "").replace(/^\?/, ""), h = (location.hash || "").replace(/^#/, "");
+    var params = q + (q && h ? "&" : "") + h;
+    var p = new URLSearchParams(params);
+    var deep = "spireborn://auth" + (params ? "?" + params : "");
+    var android = /Android/i.test(navigator.userAgent);
+    var link = android ? "intent://auth" + (params ? "?" + params : "") + "#Intent;scheme=spireborn;package=com.spireborn.game;end" : deep;
+    var err = p.get("error_description") || p.get("error");
+    if (err || !p.get("code")) {
+      document.getElementById("ok").hidden = true; document.getElementById("bad").hidden = false;
+      document.getElementById("why").textContent = err || (en ? "No sign-in code came back from Google." : "O Google não devolveu o código de entrada.");
+      document.getElementById("back").href = link;
+      return;
+    }
+    document.getElementById("go").href = link;
+    setTimeout(function () { location.href = link; }, 250); // tenta sozinho; se o navegador bloquear, fica o botão
+  })();
+</script>
+</body>
+</html>
