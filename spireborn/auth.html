@@ -40,9 +40,7 @@
   </div>
 </main>
 <script>
-  // O Supabase devolve o jogador aqui com ?code=… (ou ?error=…). Os navegadores do Android costumam bloquear o salto
-  // automático para uma app vinda de outro site; um botão tocado pelo jogador passa. O código só serve com o verificador
-  // que ficou no telemóvel, por isso não vale nada fora do jogo.
+  // Return page for "Sign in with Google": hands the result back to the app.
   (function () {
     var en = !/^pt/i.test(navigator.language || "");
     document.querySelectorAll("[data-pt]").forEach(function (e) { e.textContent = e.getAttribute(en ? "data-en" : "data-pt"); });
@@ -61,7 +59,7 @@
       return;
     }
     document.getElementById("go").href = link;
-    setTimeout(function () { location.href = link; }, 250); // tenta sozinho; se o navegador bloquear, fica o botão
+    setTimeout(function () { location.href = link; }, 250); // try automatically; the button stays as a fallback
   })();
 </script>
 </body>

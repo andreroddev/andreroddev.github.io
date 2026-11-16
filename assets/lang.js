@@ -1,4 +1,4 @@
-// Língua da página (pt ou en): a escolha guardada, senão a do browser. O botão troca e guarda.
+// Language: saved choice, otherwise the browser language.
 (function () {
   var root = document.documentElement, saved = null;
   try { saved = localStorage.getItem('site_lang'); } catch (e) {}

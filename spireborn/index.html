@@ -31,7 +31,7 @@
   .wrap { width: min(1160px, 100% - 40px); margin: 0 auto; }
   h1, h2, h3 { font-family: Cinzel, Georgia, serif; color: var(--snow); letter-spacing: .5px; margin: 0; }
 
-  /* topo */
+  /* Header */
   .top { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); background: rgba(6, 13, 38, .72); border-bottom: 1px solid var(--line); }
   .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
   .brand { display: flex; align-items: center; gap: 10px; color: var(--snow); text-decoration: none; font-weight: 700; letter-spacing: .2px; }
@@ -42,7 +42,7 @@
   .langbtn { font: 600 13px Inter, sans-serif; color: var(--snow); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; cursor: pointer; }
   .langbtn:hover { border-color: var(--ice2); }
 
-  /* hero */
+  /* Hero */
   .hero { position: relative; isolation: isolate; padding: 88px 0 120px; overflow: hidden;
     background: radial-gradient(1200px 600px at 70% 0%, #1c3a8f 0%, transparent 60%), radial-gradient(900px 500px at 10% 30%, #13286a 0%, transparent 65%), linear-gradient(180deg, #0a1638, var(--night)); }
   .hero::before { content: ""; position: absolute; inset: -20% -10% auto; height: 420px; z-index: -1; filter: blur(40px); opacity: .55;
@@ -70,7 +70,7 @@
   .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 26px; color: var(--muted); font-size: 14px; }
   .meta span::before { content: "◆"; color: var(--ice2); font-size: 9px; margin-right: 8px; vertical-align: 2px; }
 
-  /* telemóveis */
+  /* Phones */
   .phone { position: relative; width: 100%; aspect-ratio: 100 / 194; border-radius: 34px; padding: 10px; background: linear-gradient(160deg, #2a3970, #0c1434 60%); box-shadow: 0 0 0 1px rgba(255,255,255,.08), 0 30px 70px rgba(0,0,0,.6); }
   .phone img { width: 100%; height: 100%; object-fit: cover; border-radius: 26px; }
   .phone::after { content: ""; position: absolute; inset: 10px; border-radius: 26px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.06); pointer-events: none; }
@@ -82,7 +82,7 @@
 
   .ridge { position: absolute; left: 0; right: 0; bottom: -1px; height: 120px; z-index: -1; }
 
-  /* secções */
+  /* Sections */
   section { position: relative; }
   .sec { padding: 96px 0; }
   .kicker { font-size: 13px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--ice); }
@@ -101,7 +101,7 @@
 
   .alt { background: linear-gradient(180deg, transparent, rgba(16, 32, 79, .55) 15%, rgba(16, 32, 79, .55) 85%, transparent); }
 
-  /* pilares */
+  /* Pillars */
   .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 44px; }
   .pillar { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 26px; }
   .pillar .ic { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; background: rgba(76, 196, 240, .12); border: 1px solid rgba(76, 196, 240, .3); }
@@ -109,7 +109,7 @@
   .pillar h3 { font-size: 21px; margin-top: 18px; }
   .pillar p { color: var(--muted); margin: 8px 0 0; font-size: 15.5px; }
 
-  /* galeria */
+  /* Gallery */
   .gallery { display: grid; grid-auto-flow: column; grid-auto-columns: 220px; gap: 18px; overflow-x: auto; padding: 8px 4px 22px; margin-top: 40px; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #2a3970 transparent; }
   .gallery .phone { scroll-snap-align: start; border-radius: 26px; padding: 7px; }
   .gallery .phone img { border-radius: 20px; }
@@ -117,14 +117,14 @@
   .gallery figure { margin: 0; }
   .gallery figcaption { text-align: center; color: var(--muted); font-size: 14px; margin-top: 12px; }
 
-  /* números */
+  /* Facts */
   .facts { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; margin-top: 8px; }
   .facts div { padding: 22px; background: var(--card); border-right: 1px solid var(--line); }
   .facts div:last-child { border-right: 0; }
   .facts small { display: block; color: var(--muted); font-size: 12.5px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; }
   .facts b { display: block; color: var(--snow); font-size: 19px; margin-top: 6px; font-weight: 700; }
 
-  /* chamada final */
+  /* Call to action */
   .cta { margin: 0 auto; text-align: center; padding: 64px 28px; border-radius: 30px; border: 1px solid rgba(245, 194, 58, .25);
     background: radial-gradient(600px 240px at 50% 0%, rgba(245, 194, 58, .16), transparent 70%), linear-gradient(180deg, #13245c, #0c173d); }
   .cta img { width: 88px; height: 88px; border-radius: 22px; margin: 0 auto; box-shadow: 0 12px 40px rgba(76,196,240,.3); }

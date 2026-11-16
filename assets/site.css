@@ -1,4 +1,4 @@
-/* Estilo comum. Sempre escuro: é a noite gelada dos jogos. Títulos em Lilita One (como no jogo), texto em Nunito. */
+/* ByMi Games site styles */
 :root {
   --night-1: #0b1230;
   --night-2: #16205a;
@@ -27,7 +27,7 @@ body {
   font: 17px/1.6 "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   overflow-x: hidden;
 }
-/* céu: gradiente e estrelas (fixo atrás de tudo) */
+/* Background */
 body::before {
   content: ""; position: fixed; inset: 0; z-index: -2;
   background:
@@ -45,12 +45,12 @@ a:hover { text-decoration: underline; }
 img { max-width: 100%; display: block; }
 h1, h2, h3, .brand, .btn, .logo { font-family: "Lilita One", "Nunito", system-ui, sans-serif; font-weight: 400; letter-spacing: .3px; }
 
-/* línguas: só a escolhida aparece */
+/* Language switch */
 html[data-lang="pt"] [lang="en"]:not(html), html[data-lang="en"] [lang="pt"]:not(html) { display: none !important; }
 
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
 
-/* topo */
+/* Header */
 .top { position: sticky; top: 0; z-index: 20; background: rgba(11, 18, 48, .78); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 12px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-size: 21px; }
@@ -63,7 +63,7 @@ html[data-lang="pt"] [lang="en"]:not(html), html[data-lang="en"] [lang="pt"]:not
 .langbtn { font: 700 14px "Nunito", system-ui, sans-serif; color: var(--text); background: rgba(255, 255, 255, .08); border: 1px solid var(--line); border-radius: 10px; padding: 6px 11px; cursor: pointer; margin-left: 4px; }
 .langbtn:hover { background: rgba(255, 255, 255, .14); }
 
-/* botões com o volume dos botões do jogo */
+/* Buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 22px; border-radius: 16px; font-size: 20px; color: #fff;
   background: linear-gradient(180deg, var(--blue), var(--blue-dk)); box-shadow: 0 5px 0 var(--edge), inset 0 2px 0 rgba(255, 255, 255, .25);
   text-shadow: 0 2px 0 rgba(0, 0, 0, .35); transition: transform .08s ease, box-shadow .08s ease; }
@@ -76,15 +76,15 @@ html[data-lang="pt"] [lang="en"]:not(html), html[data-lang="en"] [lang="pt"]:not
 .btn.soon:active { transform: none; box-shadow: 0 5px 0 var(--edge), inset 0 2px 0 rgba(255, 255, 255, .25); }
 .btns { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 22px; }
 
-/* logo em letras douradas com contorno, como no jogo */
+/* Logo */
 .logo { color: var(--gold); line-height: 1; margin: 0;
   text-shadow: 0 4px 0 #8a3a10, 0 0 1px #8a3a10, 2px 2px 0 #5a2408, -2px 2px 0 #5a2408, 2px -2px 0 #5a2408, -2px -2px 0 #5a2408, 0 10px 24px rgba(0, 0, 0, .45); }
 
-/* montanhas no fundo de um bloco */
+/* Mountains */
 .mountains { position: absolute; left: 0; right: 0; bottom: -1px; height: 140px; z-index: -1; pointer-events: none; }
 .mountains svg { width: 100%; height: 100%; display: block; }
 
-/* página principal */
+/* Home page */
 .hero { position: relative; isolation: isolate; padding: 72px 0 120px; text-align: center; }
 .hero h1 { font-size: clamp(38px, 8vw, 72px); }
 .hero p { font-size: clamp(17px, 2.6vw, 21px); color: var(--muted); max-width: 640px; margin: 18px auto 0; }
@@ -113,7 +113,7 @@ html[data-lang="pt"] [lang="en"]:not(html), html[data-lang="en"] [lang="pt"]:not
 .game.soon:hover { transform: none; }
 .game.soon b { font-family: "Lilita One", system-ui, sans-serif; font-weight: 400; font-size: 22px; color: var(--snow); display: block; margin-bottom: 4px; }
 
-/* página de um jogo */
+/* Game page */
 .ghero { position: relative; isolation: isolate; padding: 48px 0 150px; overflow: hidden; }
 .ghero .wrap { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
 .ghero .logo { font-size: clamp(56px, 12vw, 104px); }
@@ -146,7 +146,7 @@ html[data-lang="pt"] [lang="en"]:not(html), html[data-lang="en"] [lang="pt"]:not
 .facts small { display: block; color: var(--muted); font-size: 13px; font-weight: 700; }
 .facts b { font-weight: 800; }
 
-/* rodapé */
+/* Footer */
 .foot { border-top: 1px solid var(--line); padding: 28px 0 44px; color: var(--muted); font-size: 15px; background: rgba(8, 12, 32, .55); }
 .foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
 .foot a { color: var(--muted); }
